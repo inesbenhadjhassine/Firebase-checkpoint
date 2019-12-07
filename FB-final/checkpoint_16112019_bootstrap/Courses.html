@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>   
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+   <!-- Remember to include jQuery :) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+<!-- jQuery Modal -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+ <link rel="stylesheet" type="text/css" href="./css/Style.css"/>
+</head>
+<body>
+    <nav class="navbar navbar-inverse menudb">
+       
+        <div class="container-fluid">
+          <div class="navbar-header">
+                <div class="active logodb">
+                        <img src="./res/section2GMCLogo.png" alt="le logo de gomycode" height=60px width=60px/>
+                    </div>
+          </div>
+          <div class=centerbd>
+          <ul class="nav navbar-nav bardb">
+            <li><a class="liendb" href="./index.html">HOME</a></li>
+            <li><a class="liendb" href="./courses.html">COURSES</a></li>
+            <li><a class="liendb" href="./contact.html">CONTACT</a></li>
+          </ul> 
+        </div>   
+        </div>
+      </nav>
+
+      <div class="imagecourses">
+        <h1 class="heading"> 
+           Courses
+        </h1>
+    </div>
+    <div class="container">
+    <div class="row">
+        <div class="col-lg-4 courdb cours1"> <button  type="button" id="unc" class="btn buttbd"> <a href="#ex1" rel="modal:open">View more</a></button></div>
+        <div class="col-lg-4 courdb cours2"> <button  type="button" id="deuxc" class="btn buttbd"> <a href="#ex2" rel="modal:open">View more</a></button></div>
+        <div class="col-lg-4 courdb cours3"> <button  type="button" id="troisc" class="btn buttbd"> <a href="#ex3" rel="modal:open">View more</a></button></div>
+      </div> 
+             
+     <div class="row">
+        <div class="col-lg-4 courdb cours4"> <button  type="button" id="quatrec" class="btn buttbd"> <a href="#ex4" rel="modal:open">View more</a></button></div>
+        <div class="col-lg-4 courdb cours5"> <button  type="button" id="cinqc" class="btn buttbd"> <a href="#ex5" rel="modal:open">View more</a></button></div>
+        <div class="col-lg-4 courdb cours6"> <button  type="button" id="sixc" class="btn buttbd"> <a href="#ex6" rel="modal:open">View more</a></button></div>
+      </div> 
+      <div class="row">
+        <div class="col-lg-4 courdb cours7"> <button  type="button" id="septc" class="btn buttbd"> <a href="#ex7" rel="modal:open">View more</a></button></div>
+        <div class="col-lg-4 courdb cours8"> <button  type="button" id="huitc" class="btn buttbd"> <a href="#ex8" rel="modal:open">View more</a></button></div>
+        <div class="col-lg-4  courdb cours9"> <button  type="button" id="neufc" class="btn buttbd"> <a href="#ex9" rel="modal:open">View more</a></button></div>
+      </div>
+    </div>
+  </div>
+<div class="container"> 
+<div class="row-lg centerbd">
+<div>
+    <h2>
+        Feedback
+    </h2>
+</div>
+</div>
+<div class="container">
+  <div class="row-lg text-center">
+ <button class="btn-default" onclick="makeBold()">B</button>
+<button class="btn-default" onclick="makeItalic()">i</button>
+<button class="btn-default" onclick="makeUnderline()">Underline</button>
+<select class="btn-default" id="size" onchange="changeSize()">
+<option>20px</option>
+<option>30px</option>
+<option>40px</option>
+
+</select>
+<select class="btn-default" id="fontfam" onchange="changefontfam()">
+    <option>Arial</option>
+    <option>Verdana</option>
+    <option>Geneva</option>
+    
+</select>   
+<br>
+<br>
+<div><textarea id="mytext" cols="50" rows="5">hello everybody</textarea></div>
+<br>
+<br>
+</div>
+</div>
+</div>
+<!-- Modal HTML embedded directly into document -->
+<div id="ex1" class="modal">
+  <p>This is GoMyCode Track. Each track has its own goal. By adopting this track, you chose your own goal</p>
+<a href="#" rel="modal:close">Close</a>
+</div>
+<div id="ex2" class="modal">
+  <p>This is GoMyCode Track. Each track has its own goal. By adopting this track, you chose your own goal</p>
+<a href="#" rel="modal:close">Close</a>
+</div>
+<div id="ex3" class="modal">
+  <p>This is GoMyCode Track. Each track has its own goal. By adopting this track, you chose your own goal</p>
+<a href="#" rel="modal:close">Close</a>
+</div>
+<div id="ex4" class="modal">
+  <p>This is GoMyCode Track. Each track has its own goal. By adopting this track, you chose your own goal</p>
+<a href="#" rel="modal:close">Close</a>
+</div>
+<div id="ex5" class="modal">
+  <p>This is GoMyCode Track. Each track has its own goal. By adopting this track, you chose your own goal</p>
+<a href="#" rel="modal:close">Close</a>
+</div>
+<div id="ex6" class="modal">
+  <p>This is GoMyCode Track. Each track has its own goal. By adopting this track, you chose your own goal</p>
+<a href="#" rel="modal:close">Close</a>
+</div>
+<div id="ex7" class="modal">
+  <p>This is GoMyCode Track. Each track has its own goal. By adopting this track, you chose your own goal</p>
+<a href="#" rel="modal:close">Close</a>
+</div>
+<div id="ex8" class="modal">
+  <p>This is GoMyCode Track. Each track has its own goal. By adopting this track, you chose your own goal</p>
+<a href="#" rel="modal:close">Close</a>
+</div>
+<div id="ex9" class="modal">
+  <p>This is GoMyCode Track. Each track has its own goal. By adopting this track, you chose your own goal</p>
+<a href="#" rel="modal:close">Close</a>
+</div>
+</body>
+<script src="./js/main.js"></script>
+</html>
+  
